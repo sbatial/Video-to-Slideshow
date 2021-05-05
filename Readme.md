@@ -3,6 +3,17 @@
 Ein Skript zum konvertieren von Youtube-Videos zu Präsentationen.
 (Theoretisch sind auch alle anderen Plattformen möglich, die youtube-dl unterstützt)
 
+# Disclaimer
+
+Das hier ist ein reines Spaßprojekt.
+Jegliche Benutzung auf eigene Gefahr.
+Ich habe es ausprobiert unter MacOS und nur Befehle benutzt, die sowohl unter Linux als auch MacOS funktionieren sollten.
+Ich gebe jeglichen Anspruch auf Support ab.
+Ich beanworte gerne Fragen, falls ich Zeit habe. Es besteht jedoch explizit kein Anspruch auf Antwort, Hilfe oder ähnliches.
+Jeder ist frei dieses Skript zu benutzen oder modifizieren.
+
+Viel Spaß :)
+
 ## How it works
 
 1. Zieht sich den RSS-Feed des angegebenen Youtube Kanals
