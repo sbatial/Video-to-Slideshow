@@ -27,7 +27,9 @@ Viel Spaß :)
 (Um das Skript zu benutzen müssen alle benutzten Tools installiert sein. Diese sind aufgelistet unter [Tools used](#Tools-used). Da die nur ein Spaßprojekt ist und keinerlei Ansprüche hat, außer ein wenig Jux gehe ich hier nicht näher darauf ein, wie man das unter unterschiedlichen Betriebssystemen macht.)
 
 - Skript herunter laden und mit `chmod +x video_to_slides.sh` ausführbar machen
-- Skript mit irgendeinem Texteditor öffnen und Channel-ID einfügen
+- Skript mit irgendeinem Texteditor öffnen und entweder
+    - Channel-ID einfügen oder
+    - Video-ID einfügen
 - Skript ausführen
 
 ## Find Channel ID
