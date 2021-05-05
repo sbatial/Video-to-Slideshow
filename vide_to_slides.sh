@@ -1,10 +1,18 @@
 #!/bin/bash
 
-# fetch rss feed
-curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=UCOY3VWW4NGQAue_rqTBtdhA" >> newest_videos.tmp
+### Variablen
+channel_id="UCOY3VWW4NGQAue_rqTBtdhA"
+video_Url="https://www.youtube.com/watch?v=bD6Y6OFufe4"
+###
 
-# Extract the video_Url from the rss feed
-video_Url=$(cat newest_videos.tmp | grep -iF media:content | head -n1 | awk -F'"' '{ print $2 }')
+# If no Video URL is given: Get the URL of the last Video
+if [[ -z $video_Url ]]; then
+    # fetch rss feed
+    curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=$channel_id" >> newest_videos.tmp
+
+    # Extract the video_Url from the rss feed
+    video_Url=$(cat newest_videos.tmp | grep -iF media:content | head -n1 | awk -F'"' '{ print $2 }')
+fi
 
 # download the video
 youtube-dl "$video_Url" -o 'newest_video.mp4' -f mp4
