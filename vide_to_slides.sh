@@ -2,7 +2,7 @@
 
 ### Variablen
 channel_id="UCOY3VWW4NGQAue_rqTBtdhA"
-video_Url="https://www.youtube.com/watch?v=bD6Y6OFufe4"
+video_Url=""
 ###
 
 # If no Video URL is given: Get the URL of the last Video
