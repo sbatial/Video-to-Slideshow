@@ -9,9 +9,6 @@ video_Url=$(cat newest_videos.tmp | grep -iF media:content | head -n1 | awk -F'"
 # download the video
 youtube-dl "$video_Url" -o 'newest_video.mp4' -f mp4
 
-# download the subtitles
-youtube-dl --write-auto-sub --sub-lang de --skip-download "$video_Url"
-
 # split the video in frames
 mkdir frames
 ffmpeg -i newest_video.mp4 -r 2 frames/%05d.bmp
