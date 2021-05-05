@@ -17,9 +17,7 @@ ffmpeg -i newest_video.mp4 -r 2 frames/%05d.bmp
 ls frames/ | awk '{ print "![](./frames/"$0")\n" }' >> pres.tmp
 
 # create the powerpoint presentation
-# pandoc -s pres.tmp -o video_slides.pptx
-# create the reveal.js presentation
-pandoc -s pres.tmp -t revealjs -o video_slides.html
+pandoc -s pres.tmp -o video_slides.pptx
 
 # clean the temporary files
 rm -rf *.tmp newest_video.mp4 video_slides.txt frames
