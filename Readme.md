@@ -1,3 +1,10 @@
+# Umzug
+
+TLDR: Benutz' gitlab.
+
+Für den unwahrscheinlichen Fall, dass jemand über dieses Repo stolpert:
+-> Ich bin mit allen meinen Repositories zu https://gitlab.com/sbatial umgezogen, da ich es dort wesentlich angenehmer/weniger nervig finde (Ich verstehe nicht, weshalb ich auf github in den Browser gehen muss um ein Repo zu erstellen, anstatt dass einfach ein neues erstellt wird, wenn noch keins existiert... Es ist offensichtlich technisch möglich)
+
 # Video to Slideshow
 
 Ein Skript zum konvertieren von Youtube-Videos zu Präsentationen.
